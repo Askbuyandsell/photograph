@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Eternal Moments</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #eee;
+      font-smooth: always;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      color: #f7ca18;
+    }
+
+    header nav a {
+      color: #eee;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #f7ca18;
+    }
+
+    .section {
+      padding: 80px 20px;
+      min-height: 100vh;
+      perspective: 1000px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      text-align: center;
+      max-width: 800px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transform: rotateY(-15deg);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .section:hover .content {
+      transform: rotateY(0);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
+    }
+
+    .section h2 {
+      font-size: 2.5em;
+      color: #f7ca18;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1.2em;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .experience-list {
+      list-style-type: none;
+      margin: 30px 0;
+    }
+
+    .experience-list li {
+      font-size: 1.1em;
+      margin: 15px 0;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    .experience-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #f7ca18;
+      font-size: 2em;
+      top: 0;
+    }
+
+    .awards {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 20px;
+    }
+
+    .award-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      max-width: 200px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .award-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    }
+
+    .award-card img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 15px;
+      border-radius: 50%;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #f7ca18;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #e0ac0e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    footer p {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eternal Moments</h1>
+    <nav>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/experience.html">Experience</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="content">
+      <h2>Experience & Skills</h2>
+      <p>With years of experience, we have mastered various photography techniques, honed our creative vision, and captured countless special moments for our clients.</p>
+
+      <h3>Key Experience:</h3>
+      <ul class="experience-list">
+        <li>5+ Years in Professional Photography</li>
+        <li>Expert in Portrait, Event, and Wedding Photography</li>
+        <li>Extensive experience working with high-profile clients</li>
+        <li>Mastery in editing, retouching, and post-processing</li>
+        <li>Skilled in using advanced photography equipment and technology</li>
+      </ul>
+
+      <h3>Awards & Accomplishments:</h3>
+      <div class="awards">
+        <div class="award-card">
+          <img src="/award1.jpg" alt="Award 1">
+          <h4>Best Wedding Photographer</h4>
+          <p>Awarded by XYZ Photography Guild</p>
+        </div>
+        <div class="award-card">
+          <img src="/award2.jpg" alt="Award 2">
+          <h4>Top 10 Event Photographers</h4>
+          <p>Recognized by Global Photography Awards</p>
+        </div>
+        <div class="award-card">
+          <img src="/award3.jpeg" alt="Award 3">
+          <h4>Excellence in Portrait Photography</h4>
+          <p>Given by ABC Photography Council</p>
+        </div>
+      </div>
+
+      <a href="/contact.html" class="button">Contact Us for Your Photoshoot</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Eternal Moments. All rights reserved.</p>
+  </footer>
+</body>
+</html>

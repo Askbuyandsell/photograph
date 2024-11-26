@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Eternal Moments</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #eee;
+      font-smooth: always;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      color: #f7ca18;
+    }
+
+    header nav a {
+      color: #eee;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #f7ca18;
+    }
+
+    .section {
+      padding: 80px 20px;
+      min-height: 100vh;
+      perspective: 1000px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      text-align: center;
+      max-width: 800px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transform: rotateY(-15deg);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .section:hover .content {
+      transform: rotateY(0);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
+    }
+
+    .section h2 {
+      font-size: 2.5em;
+      color: #f7ca18;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1.2em;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #222;
+      color: #eee;
+      font-size: 1.1em;
+    }
+
+    .contact-form button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f7ca18;
+      color: #111;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #e0ac0e;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    .footer p {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eternal Moments</h1>
+    <nav>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/experience.html">Experience</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Whether it's for an inquiry, booking, or collaboration, reach out to us below:</p>
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+        <select name="inquiry" required>
+          <option value="">Select Inquiry Type</option>
+          <option value="Booking">Booking</option>
+          <option value="Collaboration">Collaboration</option>
+          <option value="General Inquiry">General Inquiry</option>
+        </select>
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Eternal Moments. All rights reserved.</p>
+  </footer>
+</body>
+</html>
