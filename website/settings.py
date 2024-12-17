@@ -190,7 +190,7 @@ JAZZMIN_SETTINGS = {
 
     ],
     # Whether to show the UI customizer on the sidebar
-    "show_ui_builder": False,
+    "show_ui_builder": True,
 
 }
 
@@ -200,23 +200,23 @@ JAZZMIN_UI_TWEAKS = {
     "footer_small_text": False,
     "body_small_text": True,
     "brand_small_text": False,
-    "brand_colour": "navbar-indigo",
+    "brand_colour": "navbar-navy",
     "accent": "accent-warning",
-    "navbar": "navbar-dark",
+    "navbar": "navbar-white navbar-light",
     "no_navbar_border": False,
     "navbar_fixed": True,
     "layout_boxed": False,
-    "footer_fixed": True,
-    "sidebar_fixed": False,
-    "sidebar": "sidebar-light-warning",
+    "footer_fixed": False,
+    "sidebar_fixed": True,
+    "sidebar": "sidebar-dark-navy",
     "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
-    "sidebar_nav_child_indent": False,
+    "sidebar_disable_expand": True,
+    "sidebar_nav_child_indent": True,
     "sidebar_nav_compact_style": True,
     "sidebar_nav_legacy_style": True,
     "sidebar_nav_flat_style": True,
-    "theme": "darkly",
-    "dark_mode_theme": "darkly",
+    "theme": "slate",
+    "dark_mode_theme": "superhero",
     "button_classes": {
         "primary": "btn-primary",
         "secondary": "btn-secondary",
@@ -225,5 +225,5 @@ JAZZMIN_UI_TWEAKS = {
         "danger": "btn-danger",
         "success": "btn-success"
     },
-    "actions_sticky_top": True
+    "actions_sticky_top": False
 }

@@ -19,9 +19,9 @@ def form(request):
     n=''
     if request.method=="POST":
         name=request.POST.get('name')
-        email=request.POST.get('name')
-        phone=request.POST.get('name')
-        message=request.POST.get('name')
+        email=request.POST.get('email')
+        phone=request.POST.get('phone')
+        message=request.POST.get('message')
         
         
         info=Contact(name=name, email=email, phone=phone, message=message)
