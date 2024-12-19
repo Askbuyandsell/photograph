@@ -10,12 +10,13 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', Arial, sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      background: linear-gradient(135deg, #1e1e2f, #111);
-      color: #fff;
+      background-color: #111;
+      color: #eee;
+      font-smooth: always;
       overflow-x: hidden;
     }
 
@@ -23,142 +24,137 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
-      background: rgba(20, 20, 30, 0.9);
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
     }
 
     header h1 {
-      font-size: 2em;
-      color: #ffaf1a;
+      font-size: 1.8em;
+      color: #f7ca18;
     }
 
     header nav a {
-      color: #bbb;
-      margin: 0 15px;
+      color: #eee;
+      margin: 0 10px;
       text-decoration: none;
-      font-size: 1em;
-      transition: color 0.3s, transform 0.3s;
+      transition: color 0.3s;
     }
 
     header nav a:hover {
-      color: #ffaf1a;
-      transform: scale(1.1);
+      color: #f7ca18;
     }
 
     .section {
-      padding: 100px 20px;
+      padding: 80px 20px;
+      min-height: 100vh;
+      perspective: 1000px;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
     }
 
     .content {
-      max-width: 900px;
       text-align: center;
-      padding: 50px;
+      max-width: 800px;
+      padding: 40px;
       background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(12px);
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transform: rotateY(-15deg);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
 
-    .content h2 {
-      font-size: 3em;
-      color: #ffaf1a;
-      margin-bottom: 20px;
+    .section:hover .content {
+      transform: rotateY(0);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
     }
 
-    .content p {
+    .section h2 {
+      font-size: 2.5em;
+      color: #f7ca18;
+      margin-bottom: 10px;
+    }
+
+    .section p {
       font-size: 1.2em;
       color: #ddd;
-      line-height: 1.8;
+      margin-bottom: 20px;
     }
 
     .experience-list {
       list-style-type: none;
-      margin: 40px 0;
+      margin: 30px 0;
     }
 
     .experience-list li {
-      font-size: 1.2em;
-      margin: 20px 0;
-      padding-left: 35px;
+      font-size: 1.1em;
+      margin: 15px 0;
+      padding-left: 30px;
       position: relative;
     }
 
     .experience-list li::before {
-      content: "\2022";
+      content: "•";
       position: absolute;
       left: 0;
-      color: #ffaf1a;
-      font-size: 1.5em;
-      line-height: 1.2;
+      color: #f7ca18;
+      font-size: 2em;
       top: 0;
     }
 
     .awards {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin-top: 50px;
+      margin-top: 40px;
+      gap: 20px;
     }
 
     .award-card {
       background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      width: 250px;
+      padding: 20px;
+      max-width: 200px;
       text-align: center;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .award-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
     }
 
     .award-card img {
       width: 100px;
       height: 100px;
+      margin-bottom: 15px;
       border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    .award-card h4 {
-      font-size: 1.5em;
-      color: #ffaf1a;
-      margin-bottom: 10px;
     }
 
     .button {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 12px 30px;
-      background: #ffaf1a;
+      padding: 10px 20px;
+      background-color: #f7ca18;
       color: #111;
-      font-weight: bold;
       text-decoration: none;
-      border-radius: 50px;
-      transition: background-color 0.3s, transform 0.3s;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 30px;
+      transition: background-color 0.3s;
     }
 
     .button:hover {
-      background: #e09a17;
-      transform: translateY(-3px);
+      background-color: #e0ac0e;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: rgba(20, 20, 30, 0.9);
-      color: #aaa;
+      background-color: #000;
+      color: #777;
       font-size: 0.9em;
     }
 
